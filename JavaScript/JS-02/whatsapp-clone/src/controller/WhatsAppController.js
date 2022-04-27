@@ -15,6 +15,7 @@ class WhatsAppController {
 
   elementPrototype() {
     Element.prototype.hide = function () {
+
       this.style.display = 'none';
       return this;
     }
@@ -66,7 +67,6 @@ class WhatsAppController {
   initEvents() {
 
     this.el.myPhoto.on('click', e => {
-
       this.closeAllLeftPanel();
       this.el.panelEditProfile.show();
 
